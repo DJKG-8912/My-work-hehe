@@ -1,0 +1,156 @@
+summer = 0
+winter = 0
+autumn = 0
+spring = 0
+thedumbscore = 0
+
+
+name = input("What is your name?")
+
+
+if name.lower() == "sparsh":
+   print("Your gravitational force is so strong you get your own season, but I still let you take this quiz.")
+
+
+print("1. What is your favourite thing to do?")
+print("A. Playing With Friends")
+print("B. Gaming")
+print("C. Nice Walks Outside")
+print("D. Read a Book")
+
+
+answer1 = input("Pick an answer and only write the letter: ").upper()
+
+
+if answer1 == 'A':
+   summer += 1
+elif answer1 == 'B':
+   winter += 1
+elif answer1 == 'C':
+   autumn += 1
+elif answer1 == 'D':
+   spring += 1
+else:
+   print("To fail such a simple request is incredible.")
+   thedumbscore += 1
+
+
+print("2. What is your favourite color(that's not Purple)")
+print("A. Blue")
+print("B. Green")
+print("C. Red")
+print("D. Any color that's not Purple")
+
+
+answer2 = input("Pick an answer and only write the letter: ").upper()
+
+
+if answer2 == 'C':
+   summer += 1
+elif answer2 == 'A':
+   winter += 1
+elif answer2 == 'D':
+   autumn += 1
+elif answer2 == 'B':
+   spring += 1
+else:
+   print("To fail such a simple request is incredible.")
+   thedumbscore += 1
+
+
+print("3. Are you more introverted or extroverted")
+print("A. Introverted")
+print("B. Extroverted")
+
+
+answer3 = input("Pick an answer and only write the letter: ").upper()
+
+
+if answer3 == 'A':
+   winter += 1
+   autumn += 1
+elif answer3 == 'B':
+   summer += 1
+   spring += 1
+else:
+   print("To fail such a simple request is incredible.")
+   thedumbscore += 1
+
+
+print("4. What color is your hair")
+print("A. Black")
+print("B. Orange")
+print("C. White")
+print("D. Blonde")
+
+
+answer4 = input("Pick an answer and only write the letter: ").upper()
+
+
+if answer4 == 'A':
+   summer += 1
+elif answer4 == 'B':
+   autumn += 1
+elif answer4 == 'C':
+   winter += 1
+elif answer4 == 'D':
+   spring += 1
+else:
+   print("To fail such a simple request is incredible.")
+   thedumbscore += 1
+
+
+print("5. What season do you want to be XD")
+print("A. Summer")
+print("B. Autumn")
+print("C. Winter")
+print("D. Spring")
+
+
+answer5 = input("Pick an answer and only write the letter: ").upper()
+
+
+if answer5 == 'A':
+   summer += 1
+   fav = summer
+elif answer5 == 'B':
+   autumn += 1
+   fav = autumn
+elif answer5 == 'C':
+   winter += 1
+   fav = winter
+elif answer5 == 'D':
+   spring += 1
+   fav = spring
+else:
+   print("To fail such a simple request is incredible.")
+   thedumbscore += 1
+
+categories = {summer, winter, summer, autumn, thedumbscore}
+largest = max(categories)
+
+if largest == summer:
+    print("Your season is SUMMER")
+    print(f"You are {largest*20}% summer ")
+
+if largest == winter:
+    print("Your season is WINTER")
+    print(f"You are {largest*20}% winter ")
+
+if largest == spring:
+    print("Your season is SPRING")
+    print(f"You are {largest*20}% spring")
+
+if largest == autumn:
+    print("Your season is Autumn")
+    print(f"You are {largest*20}% autumn")
+
+if largest == thedumbscore:
+    print("You are very dumb. You skipped so many questions")
+
+if thedumbscore == 0:
+  print("You can listen to instructions. Congrats")
+
+if largest == fav:
+    print("you got the season you wanted :)")
+
